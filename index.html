@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>ContaCerta — Calculadoras grátis para o dia a dia</title>
+  <meta name="description" content="Faça cálculos de porcentagem, regra de três e juros compostos gratuitamente. Ferramentas simples, rápidas e explicadas em português.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://SEU-DOMINIO.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"ContaCerta","url":"https://SEU-DOMINIO.com/","description":"Calculadoras grátis e guias práticos para o dia a dia","inLanguage":"pt-BR"}
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="ContaCerta página inicial"><span class="brand-mark">✓</span> Conta<span>Certa</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#ferramentas">Calculadoras</a><a href="#guias">Guias</a><a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">FERRAMENTAS GRATUITAS • SEM COMPLICAÇÃO</p>
+        <h1>Entenda seus números.<br><span>Decida melhor.</span></h1>
+        <p class="hero-copy">Calculadoras simples e guias diretos para ajudar você a resolver contas do dia a dia — sem cadastro e sem enrolação.</p>
+        <a class="button button-light" href="#ferramentas">Explorar calculadoras <span aria-hidden="true">↓</span></a>
+        <div class="trust-row"><span>✓ Grátis</span><span>✓ Resultado imediato</span><span>✓ Fácil de usar</span></div>
+      </div>
+      <div class="hero-card" aria-label="Exemplo de cálculo">
+        <div class="mini-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><small>EXEMPLO DE ECONOMIA</small></div>
+        <p class="muted">Desconto de 15% em R$ 200</p><div class="big-number">R$ 170,00</div>
+        <div class="progress"><span></span></div><div class="between"><span>Você economiza</span><strong>R$ 30,00</strong></div>
+        <div class="card-note">Um cálculo claro pode ajudar a comparar opções.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="ferramentas">
+    <div class="section-heading"><div><p class="eyebrow dark">RESOLVA AGORA</p><h2>Calculadoras populares</h2></div><p>Escolha uma ferramenta, informe os valores e veja o resultado na hora.</p></div>
+    <div class="tool-grid">
+      <article class="tool-card">
+        <div class="tool-icon blue">％</div><h3>Calculadora de porcentagem</h3><p>Descubra descontos, aumentos e quanto um valor representa de outro.</p>
+        <label for="pctBase">Valor base (R$ ou número)</label><input id="pctBase" type="number" min="0" step="any" placeholder="Ex.: 200">
+        <label for="pctRate">Porcentagem (%)</label><input id="pctRate" type="number" step="any" placeholder="Ex.: 15">
+        <button class="button full" id="pctBtn">Calcular porcentagem</button><div class="result" id="pctResult" aria-live="polite">Seu resultado aparecerá aqui.</div>
+      </article>
+      <article class="tool-card">
+        <div class="tool-icon purple">↗</div><h3>Regra de três simples</h3><p>Encontre um valor proporcional quando você conhece três valores.</p>
+        <div class="three-fields">
+          <div><label for="rA">A</label><input id="rA" type="number" step="any" placeholder="Ex.: 4"></div>
+          <div><label for="rB">B</label><input id="rB" type="number" step="any" placeholder="Ex.: 20"></div>
+          <div><label for="rC">C</label><input id="rC" type="number" step="any" placeholder="Ex.: 7"></div>
+        </div>
+        <p class="formula">Se A corresponde a B, então C corresponde a X.</p>
+        <button class="button full" id="ruleBtn">Encontrar X</button><div class="result" id="ruleResult" aria-live="polite">Seu resultado aparecerá aqui.</div>
+      </article>
+      <article class="tool-card">
+        <div class="tool-icon green">↻</div><h3>Juros compostos</h3><p>Simule como um valor pode evoluir com uma taxa e um prazo.</p>
+        <label for="principal">Valor inicial (R$)</label><input id="principal" type="number" min="0" step="any" placeholder="Ex.: 1000">
+        <div class="two-fields"><div><label for="rate">Taxa mensal (%)</label><input id="rate" type="number" step="any" placeholder="Ex.: 1"></div><div><label for="months">Meses</label><input id="months" type="number" min="0" step="1" placeholder="Ex.: 12"></div></div>
+        <button class="button full" id="interestBtn">Simular crescimento</button><div class="result" id="interestResult" aria-live="polite">Seu resultado aparecerá aqui.</div>
+        <p class="microcopy">Simulação matemática, não é recomendação de investimento.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="guide-band" id="guias"><div class="container guide-layout"><div><p class="eyebrow dark">APRENDA SEM COMPLICAÇÃO</p><h2>Não basta calcular.<br>É bom entender.</h2><p>Veja explicações curtas para usar os resultados com mais segurança.</p></div>
+    <div class="guide-list">
+      <a href="guias/como-calcular-porcentagem.html"><span class="guide-number">01</span><span><strong>Como calcular porcentagem</strong><small>Desconto, acréscimo e proporção explicados</small></span><b>→</b></a>
+      <a href="guias/regra-de-tres.html"><span class="guide-number">02</span><span><strong>Como fazer regra de três</strong><small>Um método prático com exemplo resolvido</small></span><b>→</b></a>
+      <a href="guias/juros-compostos.html"><span class="guide-number">03</span><span><strong>O que são juros compostos?</strong><small>Entenda a fórmula e suas limitações</small></span><b>→</b></a>
+    </div>
+  </div></section>
+  <section class="container section why">
+    <p class="eyebrow dark">NOSSO COMPROMISSO</p><h2>Informação útil, sem complicação.</h2>
+    <div class="value-grid"><div><span>01</span><h3>Transparência</h3><p>Explicamos o que cada ferramenta calcula e quais são suas limitações.</p></div><div><span>02</span><h3>Privacidade</h3><p>Os cálculos desta página acontecem no seu navegador. Não precisamos de cadastro.</p></div><div><span>03</span><h3>Acesso simples</h3><p>Layout adaptado para celular, tablet e computador.</p></div></div>
+  </section>
+</main>
+<footer><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">✓</span> Conta<span>Certa</span></a><p>Ferramentas gratuitas para decisões mais claras.</p><div class="footer-links"><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="contato.html">Contato</a></div></div><div class="container footer-bottom">© <span id="year"></span> ContaCerta. Conteúdo informativo.</div></footer>
+<script src="script.js"></script>
+</body></html>

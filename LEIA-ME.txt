@@ -1,0 +1,21 @@
+CONTACERTA — SITE ESTÁTICO PRONTO PARA PERSONALIZAR
+
+O que vem no pacote:
+- Página inicial responsiva com três calculadoras funcionais
+- Três guias originais iniciais
+- Páginas Sobre, Privacidade, Termos e Contato
+- SEO básico, robots.txt, sitemap.xml e favicon
+- Não exige banco de dados nem instalação de dependências
+
+ANTES DE PUBLICAR:
+1. Escolha e registre um domínio ou publique em uma hospedagem estática.
+2. Substitua todas as ocorrências de https://SEU-DOMINIO.com pelo domínio real, incluindo canonical, dados estruturados, robots.txt e sitemap.xml.
+3. Em contato.html, troque SEU-EMAIL@SEU-DOMINIO.com por um endereço real.
+4. Revise a política de privacidade para refletir os serviços efetivamente usados.
+5. Crie conteúdo útil e original em quantidade suficiente; não publique páginas vazias ou geradas em massa.
+6. Configure Google Search Console e envie o sitemap.
+7. Solicite a análise do site no Google AdSense. Quando aprovado, insira o código oficial de anúncios fornecido pelo Google nas páginas. Não invente nem copie código de publisher ID de terceiros.
+8. Verifique as exigências atuais de consentimento para cookies/anúncios e as políticas do AdSense antes de ativar anúncios.
+
+IMPORTANTE:
+O pacote não garante aprovação no Google AdSense nem renda. Aprovação depende de avaliação do Google, conteúdo, navegação, políticas e outros fatores. Tráfego orgânico costuma exigir trabalho contínuo de SEO e conteúdo. Não clique nos próprios anúncios nem incentive cliques.

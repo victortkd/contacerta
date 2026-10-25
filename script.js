@@ -1,0 +1,9 @@
+const $ = id => document.getElementById(id);
+const money = n => n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const num = n => n.toLocaleString('pt-BR',{maximumFractionDigits:8});
+function show(id,text,ok=false){const el=$(id);el.textContent=text;el.classList.toggle('success',ok)}
+$('pctBtn')?.addEventListener('click',()=>{const a=Number($('pctBase').value),p=Number($('pctRate').value);if($('pctBase').value===''||$('pctRate').value===''||!Number.isFinite(a)||!Number.isFinite(p)){show('pctResult','Preencha os dois campos com números válidos.');return}show('pctResult',`${num(p)}% de ${num(a)} = ${num(a*p/100)}. Com esse acréscimo: ${num(a+a*p/100)}; com esse desconto: ${num(a-a*p/100)}.`,true)});
+$('ruleBtn')?.addEventListener('click',()=>{const a=Number($('rA').value),b=Number($('rB').value),c=Number($('rC').value);if(['rA','rB','rC'].some(id=>$(id).value==='')||!Number.isFinite(a+b+c)||a===0){show('ruleResult','Preencha A, B e C. O valor A não pode ser zero.');return}show('ruleResult',`X = (B × C) ÷ A = ${num(b*c/a)}.`,true)});
+$('interestBtn')?.addEventListener('click',()=>{const p=Number($('principal').value),r=Number($('rate').value),m=Number($('months').value);if($('principal').value===''||$('rate').value===''||$('months').value===''||p<0||m<0||!Number.isInteger(m)||!Number.isFinite(p+r+m)||r<=-100){show('interestResult','Informe valores válidos; meses deve ser um número inteiro e a taxa maior que -100%.');return}const total=p*Math.pow(1+r/100,m);show('interestResult',`Valor final estimado: ${money(total)}. Variação no período: ${money(total-p)}.`,true)});
+$('year') && ($('year').textContent=new Date().getFullYear());
+$('menuToggle')?.addEventListener('click',()=>{const nav=$('nav'),open=nav.classList.toggle('open');$('menuToggle').setAttribute('aria-expanded',String(open));$('menuToggle').setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
